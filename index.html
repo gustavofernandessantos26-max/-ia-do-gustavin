@@ -4,88 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike - Cadastro de Membro</title>
-    <style>
-        /* CSS INTEGRADO PARA FACILITAR */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        body {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
+    <div class="container">
+        <div class="logo-container">
+            <svg class="logo-nike" viewBox="0 0 24 24" fill="#000">
+                <path d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"></path>
+            </svg>
+        </div>
 
-        .container {
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
-        }
+        <h2>Sua conta para tudo da Nike</h2>
+        <p>Ao clicar em cadastrar, você será redirecionado para o site oficial da Nike.</p>
 
-        .logo-nike {
-            width: 60px;
-            margin-bottom: 20px;
-        }
+        <form action="https://www.nike.com.br" method="GET" class="form-cadastro">
+            <div class="input-group">
+                <input type="text" name="nome" placeholder="Nome Completo" required>
+            </div>
 
-        h2 {
-            font-size: 24px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            letter-spacing: -1px;
-        }
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Endereço de e-mail" required>
+            </div>
 
-        p {
-            color: #757575;
-            font-size: 14px;
-            margin-bottom: 25px;
-            line-height: 1.5;
-        }
+            <div class="input-group">
+                <input type="password" name="senha" placeholder="Senha" required>
+            </div>
 
-        /* Formulário */
-        .input-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
+            <div class="row">
+                <div class="input-group flex-2">
+                    <input type="text" name="nascimento" placeholder="Data de Nascimento (DD/MM/AAAA)">
+                </div>
+                <div class="input-group flex-1">
+                    <input type="text" name="sexo" placeholder="Sexo">
+                </div>
+            </div>
 
-        input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #e5e5e5;
-            border-radius: 3px;
-            font-size: 16px;
-            outline: none;
-        }
+            <button type="submit" class="btn-nike">Cadastrar e Entrar</button>
+        </form>
 
-        input:focus {
-            border-color: #111;
-        }
+        <div class="footer-msg">
+            Já é um membro? <a href="https://www.nike.com.br/login">Faça login.</a>
+        </div>
+    </div>
 
-        .row {
-            display: flex;
-            gap: 10px;
-        }
-
-        /* Botão Estilo Nike */
-        .btn-black {
-            width: 100%;
-            padding: 15px;
-            background-color: #000;
-            color: #fff;
-            border: none;
-            border-radius: 3px;
-            font-size: 15px;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: opacity 0.3s;
-        }
-
-        .
+</body>
+</html>
